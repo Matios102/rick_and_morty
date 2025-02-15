@@ -3,7 +3,7 @@ import { Image, Container, Card, List, Popup } from 'semantic-ui-react';
 
 function CharacterDetail({ character = {} }) {
 
-    const getEpisodeNumbers = (episodes) => {
+    const getEpisodeNumbers = (episodes = []) => {
         return episodes.map(ep => ep.split('/').pop());
     };
 

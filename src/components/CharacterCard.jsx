@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
 
-function CharacterCard({ character = {}, onClick }) {
+function CharacterCard({ character = {}, onClick = () => { } }) {
     return (
         <Card key={character.id} onClick={onClick} className="character-card">
             <Image src={character.image} wrapped ui={false} size="medium" />
